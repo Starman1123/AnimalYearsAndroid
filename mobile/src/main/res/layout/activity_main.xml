@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your age: "
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignBottom="@+id/editText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_toRightOf="@id/textView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/bear"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/cat"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/dog"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/hamster"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:src="@drawable/hippopotamus"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:src="@drawable/kangaroo"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bear"
+        android:id="@+id/radioButton"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/imageView"
+        android:onClick="onRadioButtonClicked"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cat"
+        android:id="@+id/radioButton2"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignStart="@+id/radioButton"
+        android:onClick="onRadioButtonClicked"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dog"
+        android:id="@+id/radioButton3"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignStart="@+id/radioButton2"
+        android:onClick="onRadioButtonClicked"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hamster"
+        android:id="@+id/radioButton4"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignStart="@+id/radioButton3"
+        android:onClick="onRadioButtonClicked"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hippopotamus"
+        android:id="@+id/radioButton5"
+        android:layout_below="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4"
+        android:onClick="onRadioButtonClicked"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kangaroo"
+        android:id="@+id/radioButton6"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_alignStart="@+id/radioButton5"
+        android:onClick="onRadioButtonClicked"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:id="@+id/convertButton"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignParentStart="true"
+        android:onClick="onConvertButtonClicked"
+        android:layout_alignEnd="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultTextView"
+        android:layout_below="@+id/convertButton"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
